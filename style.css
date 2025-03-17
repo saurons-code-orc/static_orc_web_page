@@ -139,7 +139,7 @@ body {
   cursor: pointer;
 }
 
-/*Responsive Design*/
+/*Responsive Design ANFANG*/
 
 @media (max-width: 768px) {
   .nav-links {
@@ -166,4 +166,174 @@ body {
 
 }
 
-/*-----Navbar Element ENDE-----*/
+
+/*RESPONSIVE Design */
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Nav Links werden ausgeblendet*/
+  }
+
+  .burger-menu {
+    display: block; /* Bei kleineren Bildschirmen sichtbar */
+    position: fixed;
+  }
+  .logo {
+    display: block; /* wird versetzt in mobile*/
+    padding-left: 75%;
+  }
+  .navbar-content {
+    width: auto;
+  }
+
+  .logosidebar {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  
+
+}
+
+
+/*-----NAVBAR Element ENDE-----*/
+
+/*-----MENU Element ANFANG-----*/
+
+.menus {
+  display: flex;
+  align-items: stretch; /*Stretch Verwendung für Höhenanpassung Menü2; Ref. -> .menu2 stretch*/
+}
+
+.menu1 {
+  display: flex;
+  height: auto;
+  background-color: rgba(218, 218, 218, 0.4);
+  flex: 5; /* width 5/6 */
+  padding: 16px;
+  justify-content: center;
+}
+
+.menu1 h2 {
+  color: var(--Text-primary, #000);
+  /* Text/Small/Semi Bold */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
+
+.menu2 {
+  display: flex;
+  align-self: flex-start;
+  padding: 16px;
+  padding-left: 32px;
+  background-color: rgba(241, 235, 235, 0.4);
+  flex: 1; /* width 1/6 */
+  min-height: 100%; /* Stellt sicher, dass es sich anpasst */
+  align-self: stretch; /* Zieht die Höhe auf die von menu1 */
+}
+
+.row {
+  display: flex;
+  padding: 0 64px;
+  list-style-image: url('Relume.png');
+  gap: 2em;
+}
+
+.row li a {
+  text-decoration: none;
+  color: var(--Link-primary, #000);
+  /* Text/Regular/Semi Bold */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.row p {
+  color: var(--Text-primary, #000);
+  /* Text/Small/Normal */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  padding-block-end: 16px;
+  margin: 0;
+}
+
+.row2 {
+  display: flex;
+}
+
+.row2 ul {
+  list-style-type: none;
+}
+
+.row2 li {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.row2 li a {
+  text-decoration: none;
+  color: var(--Link-primary, #000);
+
+  /* Text/Small/Normal */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.row2 h2 {
+  color: var(--Text-primary, #000);
+  /* Text/Small/Semi Bold */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
+
+.contact-links {
+  padding: 0;
+}
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+
+  
+  .row {
+    flex-direction: row; /*Horizontale Anordnung des Contents*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    padding-left: 0;
+    padding-right: 128px; /*Horizontale Anordnung des Contents*/
+  }
+
+  .row p{
+    display: none;
+  }
+
+  .menus {
+    flex-direction: row; /*Horizontale Anordnung der Menüs*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+
+}
+
+/*-----MENU Element ENDE-----*/
