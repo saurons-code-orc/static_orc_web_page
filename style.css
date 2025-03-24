@@ -452,3 +452,120 @@ h1 {
     align-items: flex-start;
   }
 }  
+
+/*-----Teaser 1 ENDE-----*/
+
+/*-----Teaser 2 ANFANG-----*/
+
+.teaser2 {
+  height: 616px;
+  width: 640px;
+  gap: 32px;
+  flex: 1 0 0;
+  aspect-ratio: 77/80;
+  background: url('2.\ Teaser\ Box\ \(Join\ the\ Journey\ of\ Five\ Brave\ Orcs\).png') lightgray 50% / cover no-repeat;
+}
+
+.teaser2 h3 {
+  color: var(--Text-primary, #000);
+
+/* Heading/Desktop/Tagline/H3 */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.teaser2 h4 {
+  color: var(--Text-primary, #000);
+  margin: 0;
+
+/* Heading/Desktop/H4 */
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.teaser2 p {
+  color: var(--Text-primary, #000);
+
+/* Text/Medium/Normal */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.btn_Explore2 {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--Color-Neutral-white, #000);
+  background: var(--Color-Neutral-white, #FFF);
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.btn_Explore2 a {
+  text-decoration: none;
+  color: var(--Text-primary, #000);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.btn_Discover {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--Color-Neutral-white, #FFF);
+  background-color:#0000; /* Beispiel für die Hintergrundfarbe des Logout-Buttons */
+  width: 616;
+  height: 261;
+  gap: 16px;
+} 
+
+.btn_Discover a {
+  text-decoration: none;
+  color: var(--Text-alternate, #000);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  width: 616;
+  height: 261;
+  gap: 16px;
+}
+
+.teaser2-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 616;
+  height: 261; 
+}
+
