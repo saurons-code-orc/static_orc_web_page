@@ -451,4 +451,139 @@ h1 {
   .teaser1-buttons {
     align-items: flex-start;
   }
+
+
 }  
+
+.btn_LM {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--Color-Neutral-white, #FFF);
+  background: var(--Color-Neutral-white, #FFF);
+}
+
+
+.btn_LM a {
+  text-decoration: none;
+  color: var(--Text-primary, #000);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+/*Meet the Unforgettable orcs*/
+.five_orcs_header {
+height: auto;
+width: 560px;
+color: black;
+
+/* h1 Five ORCS*/
+font-family: Roboto;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 67.2px */
+margin: 0;
+}
+
+/*Responsive unten*/
+
+/* Header */
+.five_orcs_header {
+  max-width: 100%;
+  width: 560px;
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+  margin: 20px 0; /* Entfernt die Zentrierung */
+  text-align: center; /* Links ausgerichtet */
+
+}
+
+/* Responsive Anpassung */
+@media (max-width: 768px) {
+  .five_orcs_header {
+    font-size: 36px;
+  }
+}
+
+/* Button */
+.btn_LM {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--Color-Neutral-white, #FFF);
+  background: var(--Color-Neutral-white, #FFF);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn_LM a {
+  text-decoration: none;
+  color: var(--Text-primary, #000);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Hover Effekt */
+.btn_LM:hover {
+  background: #ddd;
+}
+
+/* Grid Container */
+.five_orcs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* Card Images */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+/* Card Titel */
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Card Beschreibung */
+.card p {
+  font-size: 14px;
+  color: #444;
+  margin: 0 15px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .five_orcs-container {
+    grid-template-columns: 1fr;
+  }
+}
