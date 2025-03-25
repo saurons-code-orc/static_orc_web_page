@@ -476,6 +476,102 @@ h1 {
   line-height: 150%; /* 24px */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Meet the Unforgettable orcs*/
 .five_orcs_header {
 height: auto;
@@ -585,5 +681,78 @@ margin: 0;
 @media (max-width: 768px) {
   .five_orcs-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Explore the Glorious Universe of Orcs */
+
+.Explore_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.Explore_header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.header h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.btn_Discover {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--Color-Neutral-white, #FFF);
+  background: var(--Color-Neutral-white, #FFF);
+}
+
+.btn_Discover a {
+  text-decoration: none;
+  color: var(--Text-primary, #000);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.World_map {
+  flex: 1 1 50%;
+}
+.World_map img {
+  width: 100%;
+  border-radius: 10px;
+}
+.info-boxes {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.info-box {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.info-box h3 {
+  margin: 0 0 10px;
+}
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+  .map, .info-boxes {
+      flex: 1 1 100%;
   }
 }
