@@ -356,7 +356,7 @@ h1 {
   display:flex;
   width: 100%;
   height: 704px;
-  padding: 0px 64px;
+  padding: 0px 0px;
   align-items: left;
   aspect-ratio: 8/5;
   background-size: 100%;
@@ -693,11 +693,13 @@ margin: 0;
 
 /* Wrapper START */
 .Wrapper_left {
-  margin-right: 16px;
+  height: auto;
 }
 
 .Wrapper_right {
+  display: flex;
   margin-top: 60px;
+  height: auto;
 }
 /*Wrapper ENDE */
 
@@ -779,16 +781,16 @@ margin: 0;
   gap: 20px;
 }
 
-.World_map {
-  flex: 1 1 50%;
-}
+
 .World_map img {
-  width: 100%;
+  width: 80%;
+  height: auto;
   border-radius: 10px;
 }
 .info-boxes {
   flex: 1 1 40%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 45px;
   list-style-image: url('Relume.png');
