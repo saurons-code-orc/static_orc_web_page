@@ -642,8 +642,8 @@ h1 {
   grid-template-columns: repeat(2, 1fr);  /* 2 gleich große Karten */
   gap: 32px;
   max-width: 800px;                      /* Schmaler für Zentrierung */
-  margin: 20px auto 0 auto ;              /* Zentriert im Container */
-  padding-left: 10px;
+  margin: 20px 0px 0px 170px;   /* Abstand zu oben  + links Abstand damit diese row unter der oberen row ist*/
+  
 }
 
 /* ────────────────────────────── */
