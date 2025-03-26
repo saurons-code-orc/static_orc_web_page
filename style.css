@@ -576,3 +576,50 @@ h1 {
   height: 261; 
 }
 
+.dragon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .teaser2 {
+    display: flex;
+    width: 100%;
+    padding: 0px 0px;
+    flex-direction: column;
+    justify-content: center;    align-items: center;
+    gap: 48px;
+ 
+  }
+
+  .section_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section_left h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section_left h4 {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section_left p {
+    display: flex;
+    width: 90%;
+    text-align: center;
+  }
+
+  .teaser2-buttons {
+    align-items: center;
+  }
+
+  .section_right {
+    display: none;
+  }
+
+}  
