@@ -851,26 +851,10 @@ h1 {
 
 .Explore_Universal {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   width: 100%;
-}
-
-/* Wrapper START */
-.Wrapper_left {
-  height: auto;
-}
-
-.Wrapper_right {
-  display: flex;
-  margin-top: 60px;
-  height: auto;
-}
-/*Wrapper ENDE */
-
-.Explore_container {
-  max-width: 1200px;
-  margin: 0;
-  padding: 20px;
-  text-align: left;
 }
 
 .Explore_intro {
@@ -896,113 +880,89 @@ h1 {
    max-width: 100%;
 }
 
-.btn_Learn_More {
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  background: #FFF;
-  border: 1px solid #000;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn_Learn_More a {
-  text-decoration: none;
-  color:#000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-}
-
-.btn_Discover {
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  border: 1px solid #000;
-  cursor: Pointer;
-  transition: background 0.3s ease;
-}
-
-.btn_Discover a {
-  text-decoration: none;
-  color:#000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
 .World_map img {
   width: 80%;
   height: auto;
-  border-radius: 10px;
-}
-.info-boxes {
-  flex: 1 1 40%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 45px;
-  list-style-image: url('Relume.png');
-  width: 552px;
-  height: auto;
 }
 
-.info-boxes img {
-  width: 36px;
-  height: 36px;
+/* Linke Seite: Text + Buttons */
+.Wrapper_left {
+  flex: 1 1 50%;
+  min-width: 500px;
+  order: 1; /* Standard: Bleibt links */
+}
+
+.Explore_container {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.teaser1-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.teaser1-buttons button {
+  padding: 12px 24px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: white;
+}
+
+.teaser1-buttons a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+/* Rechte Seite: Info-Boxen */
+.Wrapper_right {
+  flex: 1 1 40%;
+  display: flex;
+  margin-top: 60px;
+  height: auto;
+  flex-direction: column;
+  order: 2; /* Standard: Bleibt rechts */
+}
+
+.info-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  margin-right: 60px;
 }
 
 .info-box {
   background: white;
   padding: 20px;
   border: 1px solid #000;
-  display: flex;
-  flex-direction: column;
 }
 
-.info-header {
-  display: flex;
-  align-items: center; /* Richtet das Icon und den Titel auf einer Linie aus */
-  gap: 10px;
-}
-
-.info-box h3 {
-  margin: 0 0 10px;
-}
-
-.box1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.Explore_Universal h6 {
-  font-family: Roboto;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
+/* Responsive: Boxen unter die Buttons */
 @media (max-width: 768px) {
-  .content {
-      flex-direction: column;
+  .Explore_Universal {
+    flex-direction: column;
   }
-  .map, .info-boxes {
-      flex: 1 1 100%;
+
+  .Wrapper_left {
+    flex: 1 1 100%;
+    order: 1; /* Buttons bleiben oben */
+  }
+
+  .Wrapper_right {
+    flex: 1 1 100%;
+    order: 2; /* Boxen nach unten */
+  }
+
+  .teaser1-buttons {
+    justify-content: center;
+  }
+
+@media (max-width:600px) {
+    .World_map {
+      display: none;
+    } 
   }
 }
 /* Explore the Glorious Universe of Orcs Ende */
