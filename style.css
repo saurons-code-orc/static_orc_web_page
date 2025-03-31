@@ -354,9 +354,9 @@ h1 {
 /*-----Teaser 1 ANFANG-----*/
 .teaser1 {
   display:flex;
-  width: 100%;
+  width: 95%;
   height: 704px;
-  padding: 0px 0px;
+  padding: 40px;
   align-items: left;
   aspect-ratio: 8/5;
   background-size: 100%;
@@ -763,6 +763,8 @@ h1 {
 }
 
 /* "Learn More" Button */
+
+
 .btn_learn {
   display: flex;
   padding: 12px 24px;
@@ -822,6 +824,11 @@ h1 {
   .five_orcs-container.top-row,
   .five_orcs-container.bottom-row {
     grid-template-columns: 1fr;
+  }
+
+  .five_orcs-container.bottom-row {
+    margin-left: 0;
+    justify-items: center;
   }
 
   .orc-buttons {
