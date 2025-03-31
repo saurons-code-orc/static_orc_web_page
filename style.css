@@ -669,12 +669,16 @@ h1 {
 }
 
 .five_orcs_intro p {
-  font-size: 14px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 30px;
   text-align: left;
   max-width: 100%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
 }
 
 /* ────────────────────────────── */
