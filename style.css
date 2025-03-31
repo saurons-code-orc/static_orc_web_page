@@ -836,3 +836,155 @@ h1 {
 
 /*Meet the Unforgettable orcs Ende*/
 
+/* Explore the Glorious Universe of Orcs */
+
+.Explore_Universal {
+  display: flex;
+  width: 100%;
+}
+
+/* Wrapper START */
+.Wrapper_left {
+  height: auto;
+}
+
+.Wrapper_right {
+  display: flex;
+  margin-top: 60px;
+  height: auto;
+}
+/*Wrapper ENDE */
+
+.Explore_container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.Explore_intro {
+  max-width: 900px;
+  text-align: left;
+}
+
+.Explore_header {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color:#000;
+  text-align: left;
+  margin-left: 0 0 20px 0;
+  }
+
+.Explore_header p {
+   font-size: 14px;
+   line-height: 1.6;
+   margin-bottom: 30px;
+   text-align: left;
+   max-width: 100%;
+}
+
+.btn_Learn_More {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #FFF;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn_Learn_More a {
+  text-decoration: none;
+  color:#000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.btn_Discover {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #000;
+  cursor: Pointer;
+  transition: background 0.3s ease;
+}
+
+.btn_Discover a {
+  text-decoration: none;
+  color:#000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.World_map img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+.info-boxes {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+  list-style-image: url('Relume.png');
+  width: 552px;
+  height: auto;
+}
+
+.info-boxes img {
+  width: 36px;
+  height: 36px;
+}
+
+.info-box {
+  background: white;
+  padding: 20px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-header {
+  display: flex;
+  align-items: center; /* Richtet das Icon und den Titel auf einer Linie aus */
+  gap: 10px;
+}
+
+.info-box h3 {
+  margin: 0 0 10px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+  .map, .info-boxes {
+      flex: 1 1 100%;
+  }
+}
+/* Explore the Glorious Universe of Orcs Ende */
+
