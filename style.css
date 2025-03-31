@@ -982,6 +982,14 @@ h1 {
   flex-direction: column;
 }
 
+.Explore_Universal h6 {
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .content {
       flex-direction: column;
