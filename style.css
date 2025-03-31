@@ -1007,3 +1007,70 @@ h1 {
 }
 /* Explore the Glorious Universe of Orcs Ende */
 
+/*-----Footer ANFANG-----*/
+.footer {
+  background: #e8e9e4;
+  padding: 40px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 10px 0;
+}
+
+.footer-left a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: black;
+  font-size: 18px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links div a {
+  display: block;
+  margin: 5px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #999;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-policy a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+/* Footer ENDE */
+
