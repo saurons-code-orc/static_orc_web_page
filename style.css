@@ -634,7 +634,7 @@ h1 {
 /* Haupt-Container der Sektion   */
 /* ────────────────────────────── */
 .five_orcs {
-  padding: 100px 40px 60px 60px;
+  padding: 100px 40px 60px 40px;
   max-width: 100%;
   margin: 0;
 }
@@ -849,12 +849,15 @@ h1 {
 
 /* Explore the Glorious Universe of Orcs */
 
+/* Explore the Glorious Universe of Orcs */
+
 .Explore_Universal {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
+  padding-bottom: 80px; /* Abstand zu Footer eingefügt */
 }
 
 .Explore_intro {
@@ -867,17 +870,17 @@ h1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
-  color:#000;
+  color: #000;
   text-align: left;
-  margin-left: 0 0 20px 0;
-  }
+  margin: 0 0 20px 0;
+}
 
 .Explore_header p {
-   font-size: 14px;
-   line-height: 1.6;
-   margin-bottom: 30px;
-   text-align: left;
-   max-width: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 100%;
 }
 
 .World_map img {
@@ -888,8 +891,8 @@ h1 {
 /* Linke Seite: Text + Buttons */
 .Wrapper_left {
   flex: 1 1 50%;
-  min-width: 500px;
-  order: 1; /* Standard: Bleibt links */
+  min-width: 0;
+  order: 1;
 }
 
 .Explore_container {
@@ -897,20 +900,20 @@ h1 {
   padding: 20px;
 }
 
-.teaser1-buttons {
+.explore-buttons {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.teaser1-buttons button {
+.explore-buttons button {
   padding: 12px 24px;
   border: 1px solid #000;
   cursor: pointer;
   background: white;
 }
 
-.teaser1-buttons a {
+.explore-buttons a {
   text-decoration: none;
   color: #000;
   font-size: 16px;
@@ -923,7 +926,7 @@ h1 {
   margin-top: 60px;
   height: auto;
   flex-direction: column;
-  order: 2; /* Standard: Bleibt rechts */
+  order: 2;
 }
 
 .info-boxes {
@@ -939,37 +942,49 @@ h1 {
   border: 1px solid #000;
 }
 
-/* Responsive: Boxen unter die Buttons */
+/* Responsive: Anpassungen */
 @media (max-width: 768px) {
   .Explore_Universal {
     flex-direction: column;
+    padding-bottom: 80px;
   }
 
-  .Wrapper_left {
-    flex: 1 1 100%;
-    order: 1; /* Buttons bleiben oben */
-  }
-
+  .Wrapper_left,
   .Wrapper_right {
     flex: 1 1 100%;
-    order: 2; /* Boxen nach unten */
+    order: unset;
+  }
+
+  .info-boxes {
+    margin-right: 0;
+    width: 100%;
+    gap: 20px; /* Gap muss kleiner bei Mobile; angepasst */
   }
 
   .teaser1-buttons {
     justify-content: center;
   }
+}
 
-@media (max-width:600px) {
-    .World_map {
-      display: none;
-    } 
+@media (max-width: 600px) {
+  .World_map {
+    display: none;
+  }
+
+  .Explore_header {
+    font-size: 36px;
+  }
+
+  .Explore_header p {
+    font-size: 13px;
   }
 }
+
 /* Explore the Glorious Universe of Orcs Ende */
 
 /*-----Footer ANFANG-----*/
 .footer {
-  background: #e8e9e4;
+  background: #DADADA;
   padding: 40px;
   font-family: sans-serif;
   font-size: 14px;
