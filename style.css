@@ -34,7 +34,7 @@ h1 {
   justify-content: space-between;
   padding: 0 16px;
   height: 64px;
-  background-color: #DADADA;
+  background-color: #dedede;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-bottom: 2px solid black; /* Schwarzer Trennstrich mit 2px Dicke */
 }
@@ -59,22 +59,26 @@ h1 {
   padding: 0 16px;
 }
 
+.nav-links a:hover {
+  font-weight: bold;
+}
+
 /* Navbar Buttons */
 .navbar-buttons {
   display: flex;
 }
 
-.btn_login a {
+.btn-login a {
   color: black;
   text-decoration: none;
 }
 
-.btn_signup a {
+.btn-signup a {
   color: white;
   text-decoration: none;
 }
 
-.btn_login {
+.btn-login {
   background-color:#0000; /* Beispiel für die Hintergrundfarbe des Logout-Buttons */
   display: flex;
   padding: 8px 20px;
@@ -84,11 +88,11 @@ h1 {
 
 }
 
-.btn_login:hover {
+.btn-login:hover {
   font-weight: bold;
 }
 
-.btn_signup {
+.btn-signup {
   background-color: black; /* Hintergrundfarbe des Logout-Buttons */
   color: #FFFFFF;
   margin-left: 16px;
@@ -99,7 +103,7 @@ h1 {
   gap: 8px;
 }
 
-.btn_signup:hover {
+.btn-signup:hover {
   font-weight: bold;
 }
 
@@ -129,6 +133,10 @@ h1 {
   padding: 20px;
   font-size: 20px;
   border-bottom: 2px solid black;
+}
+
+.sidebar-links a:hover {
+  font-weight: bold;
 }
 
 .logosidebar {
@@ -268,6 +276,10 @@ h1 {
   line-height: 150%; /* 24px */
 }
 
+.row li a:hover {
+  text-decoration: underline;
+}
+
 .row p {
   color: var(--Text-primary, #000);
   /* Text/Small/Normal */
@@ -304,6 +316,10 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+}
+
+.row2 li a:hover {
+  font-weight: bold;
 }
 
 .row2 h2 {
@@ -379,7 +395,7 @@ h1 {
   line-height: 150%; /* 27px */
 }
 
-.btn_Explore {
+.btn-explore {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -389,7 +405,11 @@ h1 {
   background: var(--Color-Neutral-white, #FFF);
 }
 
-.btn_Explore a {
+.btn-explore:hover {
+  background: #ddd;
+}
+
+.btn-explore a {
   text-decoration: none;
   color: var(--Text-primary, #000);
   font-family: Roboto;
@@ -399,7 +419,7 @@ h1 {
   line-height: 150%; /* 24px */
 }
 
-.btn_Learn {
+.btn-learn {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -409,7 +429,7 @@ h1 {
   background-color:#0000; /* Beispiel für die Hintergrundfarbe des Logout-Buttons */
 } 
 
-.btn_Learn a {
+.btn-learn a {
   text-decoration: none;
   color: var(--Text-alternate, #FFF);
   font-family: Roboto;
@@ -467,17 +487,17 @@ h1 {
   padding: 40px;
 }
 
-.section_left {
+.section-left {
   width: 616px;
 }
 
-.section_right {
+.section-right {
   width: 616px;
   height: 640px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%), url("2.\ Teaser\ Box\ \(Join\ the\ Journey\ of\ Five\ Brave\ Orcs\).png") lightgray 50% / cover no-repeat;
 }
 
-.section_left h3 {
+.section-left h3 {
   color: var(--Text-primary, #000);
   margin: 0;
 
@@ -491,7 +511,7 @@ h1 {
   gap: 16px;
 }
 
-.section_left h4 {
+.section-left h4 {
   color: var(--Text-primary, #000);
   margin: 0;
 
@@ -505,7 +525,7 @@ h1 {
   gap: 16px;
 }
 
-.section_left p {
+.section-left p {
   color: var(--Text-primary, #000);
 
 /* Text/Medium/Normal */
@@ -518,7 +538,7 @@ h1 {
   gap: 16px;
 }
 
-.btn_Explore2 {
+.btn-explore2 {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -529,7 +549,11 @@ h1 {
   gap: 16px;
 }
 
-.btn_Explore2 a {
+.btn-explore2:hover {
+  background: #ddd;
+}
+
+.btn-explore2 a {
   text-decoration: none;
   color: var(--Text-primary, #000);
   font-family: Roboto;
@@ -540,18 +564,22 @@ h1 {
   gap: 16px;
 }
 
-.btn_Discover {
+.btn-discover {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: 1px solid var(--Color-Neutral-white, #FFF);
+  border: 1px solid var(--Color-Neutral-white, #000);
   background-color:#0000; /* Beispiel für die Hintergrundfarbe des Logout-Buttons */
   gap: 16px;
 } 
 
-.btn_Discover a {
+.btn-discover:hover {
+  background: #ddd;
+}
+
+.btn-discover a {
   text-decoration: none;
   color: var(--Text-alternate, #000);
   font-family: Roboto;
@@ -583,25 +611,25 @@ h1 {
     gap: 48px;
   }
 
-  .section_left {
+  .section-left {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .section_left h3 {
+  .section-left h3 {
     width: 100%;
     text-align: center;
   }
 
-  .section_left h4 {
+  .section-left h4 {
     display: flex;
     width: 100%;
     text-align: center;
   }
 
-  .section_left p {
+  .section-left p {
     display: flex;
     width: 90%;
     text-align: center;
@@ -633,7 +661,7 @@ h1 {
 /* ────────────────────────────── */
 /* Haupt-Container der Sektion   */
 /* ────────────────────────────── */
-.five_orcs {
+.five-orcs {
   padding: 100px 40px 60px 40px;
   max-width: 100%;
   margin: 0;
@@ -642,14 +670,14 @@ h1 {
 /* ────────────────────────────── */
 /* Textbereich oben              */
 /* ────────────────────────────── */
-.five_orcs_intro {
+.five-orcs-intro {
   max-width: 900px;
   text-align: left;
   margin-left: 0;
   margin-bottom: 60px;
 }
 
-.five_orcs_intro h6 {
+.five-orcs-intro h6 {
   font-family: Roboto;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -657,7 +685,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.five_orcs_header {
+.five-orcs-header {
   font-family: Roboto;
   font-size: 56px;
   font-weight: 700;
@@ -668,7 +696,7 @@ h1 {
   max-width: 100%;
 }
 
-.five_orcs_intro p {
+.five-orcs-intro p {
   color: #333;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -684,7 +712,7 @@ h1 {
 /* ────────────────────────────── */
 /* Grid-Zeile 1: 3 Karten oben    */
 /* ────────────────────────────── */
-.five_orcs-container.top-row {
+.five-orcs-container-top-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  /* 3 gleich große Spalten */
   gap: 60px;
@@ -697,7 +725,7 @@ h1 {
 /* ────────────────────────────── */
 /* Grid-Zeile 2: 2 Karten zentriert */
 /* ────────────────────────────── */
-.five_orcs-container.bottom-row {
+.five-orcs-container-bottom-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* 2 gleich große Karten */
   gap: 32px;
@@ -765,7 +793,7 @@ h1 {
 /* "Learn More" Button */
 
 
-.btn_learn {
+.btn-learn {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -777,20 +805,22 @@ h1 {
   transition: background 0.3s ease;
 }
 
-.btn_learn a {
+.btn-learn a {
   text-decoration: none;
   color: #000;
+  font-family: Roboto;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 150%; /* 24px */
 }
 
-.btn_learn:hover {
+.btn-learn:hover {
   background: #ddd;
 }
 
 /* "Join Us" Button */
-.btn_join {
+.btn-join {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -802,15 +832,17 @@ h1 {
   transition: background 0.3s ease;
 }
 
-.btn_join a {
+.btn-join a {
   text-decoration: none;
   color: #000;
+  font-family: Roboto;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 150%; /* 24px */
 }
 
-.btn_join:hover {
+.btn-join:hover {
   background: #ddd;
 }
 
@@ -821,12 +853,12 @@ h1 {
 
 @media (max-width: 600px) {
   /* 1 Spalte für Mobil */
-  .five_orcs-container.top-row,
-  .five_orcs-container.bottom-row {
+  .five-orcs-container-top-row,
+  .five-orcs-container-bottom-row {
     grid-template-columns: 1fr;
   }
 
-  .five_orcs-container.bottom-row {
+  .five-orcs-container-bottom-row {
     margin-left: 0;
     justify-items: center;
   }
@@ -836,11 +868,11 @@ h1 {
     align-items: flex-start;
   }
 
-  .five_orcs_header {
+  .five-orcs-header {
     font-size: 28px;
   }
 
-  .five_orcs_intro p {
+  .five-orcs-intro p {
     font-size: 14px;
   }
 }
@@ -851,7 +883,7 @@ h1 {
 
 /* Explore the Glorious Universe of Orcs */
 
-.Explore_Universal {
+.explore-universal {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -860,12 +892,12 @@ h1 {
   padding-bottom: 80px; /* Abstand zu Footer eingefügt */
 }
 
-.Explore_intro {
+.explore-intro {
   max-width: 900px;
   text-align: left;
 }
 
-.Explore_header {
+.explore-header {
   font-family: Roboto;
   font-size: 50px;
   font-weight: 700;
@@ -875,7 +907,7 @@ h1 {
   margin: 0 0 20px 0;
 }
 
-.Explore_header p {
+.explore-header p {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -883,19 +915,19 @@ h1 {
   max-width: 100%;
 }
 
-.World_map img {
+.world-map img {
   width: 80%;
   height: auto;
 }
 
 /* Linke Seite: Text + Buttons */
-.Wrapper_left {
+.wrapper-left {
   flex: 1 1 50%;
   min-width: 0;
   order: 1;
 }
 
-.Explore_container {
+.explore-container {
   max-width: 900px;
   padding: 20px;
 }
@@ -919,8 +951,22 @@ h1 {
   font-size: 16px;
 }
 
+.btn-learn-more {
+  text-decoration: none;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.btn-learn-more:hover {
+  background: #ddd;
+}
+
 /* Rechte Seite: Info-Boxen */
-.Wrapper_right {
+.wrapper-right {
   flex: 1 1 40%;
   display: flex;
   margin-top: 60px;
@@ -944,13 +990,13 @@ h1 {
 
 /* Responsive: Anpassungen */
 @media (max-width: 768px) {
-  .Explore_Universal {
+  .explore-universal {
     flex-direction: column;
     padding-bottom: 80px;
   }
 
-  .Wrapper_left,
-  .Wrapper_right {
+  .wrapper-left,
+  .wrapper-right {
     flex: 1 1 100%;
     order: unset;
   }
@@ -967,15 +1013,15 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  .World_map {
+  .world_map {
     display: none;
   }
 
-  .Explore_header {
+  .explore_header {
     font-size: 36px;
   }
 
-  .Explore_header p {
+  .explore_header p {
     font-size: 13px;
   }
 }
@@ -984,7 +1030,7 @@ h1 {
 
 /*-----Footer ANFANG-----*/
 .footer {
-  background: #DADADA;
+  background: #dedede;
   padding: 40px;
   font-family: sans-serif;
   font-size: 14px;
@@ -1002,7 +1048,7 @@ h1 {
 
 .logo {
   height: 50px;
-  margin-bottom: 10px;
+  
 }
 
 .footer-left p {
@@ -1023,6 +1069,10 @@ h1 {
 .footer-links {
   display: flex;
   gap: 40px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 .footer-links div a {
@@ -1047,5 +1097,10 @@ h1 {
   text-decoration: none;
   font-size: 13px;
 }
+
+.footer-policy a:hover {
+  text-decoration: underline;
+}
 /* Footer ENDE */
 
+ 
