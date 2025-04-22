@@ -1124,3 +1124,21 @@ h1 {
   width: 500px;
   color: var(--Text-alternate, #FFF);
 }
+
+@media (max-width: 768px) {
+  .under_construction-teaser {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 2.09%, rgba(0, 0, 0, 0.00) 8.69%, rgba(0, 0, 0, 0.56) 100%), url('under_construction2.png') lightgray -90.804px 16.381px / 216.533% 100% no-repeat;
+    display: flex;
+    width: 100%;
+    padding: 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+ 
+  }
+  .under_construction-teaser p {
+    width: 100%;
+    text-align: center;
+  }
+}
